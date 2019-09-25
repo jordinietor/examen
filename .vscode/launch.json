@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EX2",
+            "request": "launch",
+            "mainClass": "EX2",
+            "projectName": "Programacio_53941253"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - calc2",
             "request": "launch",
             "mainClass": "calc2"
@@ -18,9 +25,9 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch) - Current File",
+            "name": "Debug (Launch) - EX1",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "EX1"
         },
         {
             "type": "java",
