@@ -18,7 +18,7 @@ public class EX2 {
             System.out.println("El teu valor de IMC es de: " + IMC + "  Estas bé");
         } else if (IMC < 30) {
             System.out.println("El teu valor de IMC es de: " + IMC + "  Sobrepes");
-        } else if (IMC > 30) {
+        } else if (IMC > 29.9) {
             System.out.println("El teu valor de IMC es de: " + IMC + "  Obesitat");
         }
     }
