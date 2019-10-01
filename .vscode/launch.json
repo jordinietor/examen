@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EX5",
+            "request": "launch",
+            "mainClass": "EX5"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - EX8",
             "request": "launch",
             "mainClass": "EX8"
