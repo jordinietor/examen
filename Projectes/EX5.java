@@ -54,4 +54,4 @@ public class EX5 {
             System.out.println("Has aconseguit: "+Punts+" Punts");
         }
     }
-}
+} 
