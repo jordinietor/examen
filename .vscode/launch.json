@@ -6,6 +6,42 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EX11R",
+            "request": "launch",
+            "mainClass": "EX11R"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EX10R",
+            "request": "launch",
+            "mainClass": "EX10R"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EX9R",
+            "request": "launch",
+            "mainClass": "EX9R"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EX8R",
+            "request": "launch",
+            "mainClass": "EX8R"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EX7R",
+            "request": "launch",
+            "mainClass": "EX7R"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EX6R",
+            "request": "launch",
+            "mainClass": "EX6R"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - EX4R",
             "request": "launch",
             "mainClass": "EX4R"
