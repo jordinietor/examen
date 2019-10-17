@@ -1,38 +1,33 @@
-import sun.security.util.Cache.EqualByteArray;
-
-import java.util.Scanner;
-
 /**
  * EX5
  */
 public class EX5 {
 
     public static void main(String[] args) {
-        int array[] = new int[10];
-        int i = 0;
+        int array[] = new int[11];
+        int i = 0, sp = 0, sn = 0, spar = 0, ss = 0;
         String resp;
-        boolean s = false;
+        boolean sortir = false;
 
-        while (!s) {
+        while (!sortir) {
 
             System.out.println("Introdueix un valor: ");
             array[i] = Integer.parseInt(System.console().readLine());
-            boolean t = false;
-            while (!t) {
+            boolean tria = false;
+            while (!tria) {
                 resp = System.console().readLine("Vols introduir mes valors: ");
                 if (resp.equalsIgnoreCase("No") || resp.equalsIgnoreCase("N")) {
-                    t = true;
-                    s = true;
+                    tria = true;
+                    sortir = true;
                 } else if ((resp.equalsIgnoreCase("Si") || resp.equalsIgnoreCase("S"))) {
-                    t = true;
+                    tria = true;
                 } else {
                     System.out.println("No es valid");
                 }
-
             }
             i++;
             if (i == array.length) {
-                s = true;
+                sortir = true;
             }
         }
         // Mostrar valors Array
@@ -41,16 +36,20 @@ public class EX5 {
          * System.out.println("Numero total de valors: "+i);
          */
 
-        for (int j = 0; j < array.length; j++) {
+        for (int j = 0; j <= i; j++) {
             if (array[j] >= 0) {
-                System.out.println("Positiu");
+                sp = array[j];
+                System.out.println("La suma dels valors positius: "+sp);
             } else {
-                System.out.println("Negatiu");
+                sn = array[j];
+                System.out.println("La suma dels valors positius: "+sn);
             }
             if (array[j] % 2 == 0) {
-                System.out.println("Parell");
+                spar = array[j];
+                System.out.println("La suma dels valors positius: "+spar);
             } else {
-                System.out.println("Senar");
+                ss = array[j];
+                System.out.println("La suma dels valors positius: "+ss);
             }
         }
     }
