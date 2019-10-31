@@ -7,6 +7,7 @@ public class EX8 {
         int numPremiat = r.nextInt(10);
         System.out.println("El numero premiat es: " + numPremiat);
         int arrayNums[] = new int[10];
+        
         for (int i = 0; i < arrayNums.length; i++)
             arrayNums[i] = 2000;
         boolean trobat = false;

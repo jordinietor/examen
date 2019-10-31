@@ -38,18 +38,18 @@ public class EX5 {
 
         for (int j = 0; j <= i; j++) {
             if (array[j] >= 0) {
-                sp = array[j];
+                sp = sp + array[j];
                 System.out.println("La suma dels valors positius: "+sp);
             } else {
-                sn = array[j];
-                System.out.println("La suma dels valors positius: "+sn);
+                sn = sn + array[j];
+                System.out.println("La suma dels valors negatius: "+sn);
             }
             if (array[j] % 2 == 0) {
-                spar = array[j];
-                System.out.println("La suma dels valors positius: "+spar);
+                spar = spar + array[j];
+                System.out.println("La suma dels valors parells: "+spar);
             } else {
-                ss = array[j];
-                System.out.println("La suma dels valors positius: "+ss);
+                ss = ss + array[j];
+                System.out.println("La suma dels valors senars: "+ss);
             }
         }
     }
