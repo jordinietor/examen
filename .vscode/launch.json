@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MEX5",
+            "request": "launch",
+            "mainClass": "MEX5",
+            "projectName": "Programacio_1355a2c3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Bingo",
             "request": "launch",
             "mainClass": "Bingo"

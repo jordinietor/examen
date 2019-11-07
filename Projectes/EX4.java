@@ -1,13 +1,16 @@
+/**
+ * EX4
+ */
 public class EX4 {
+    
     public static void main(String[] args) {
 
-        String article;
         float preu;
         float descompte;
         float valor;
-
+        
         System.out.println("Introdueix un article");
-        article = System.console().readLine();
+        System.console().readLine();
 
         System.out.println("Introdueix el preu");
         preu = Float.parseFloat(System.console().readLine());

@@ -1,7 +1,7 @@
 /**
  * EX1
  */
-public class EX1 {
+public class MEX1 {
 
     public static void main(String[] args) {
         int num;

@@ -1,7 +1,7 @@
 /**
  * EX5
  */
-public class EX5 {
+public class MEX5 {
 
     public static void main(String[] args) {
         /*
@@ -56,13 +56,13 @@ public class EX5 {
         }
         */
         int array[] = new int[5];
-        int i = 0, cp = 0, cn = 0, cpar = 0, csen = 0, sp = 0, sn = 0, spar = 0, ssen = 0, mitjana;
+        int xula = 0, cp = 0, cn = 0, cpar = 0, csen = 0, sp = 0, sn = 0, spar = 0, ssen = 0;
         String resposta;
         boolean sortir = false;
 
         while (!sortir) {
             System.out.println("Entra un valor:");
-            array[i] = Integer.parseInt(System.console().readLine());
+            array[xula] = Integer.parseInt(System.console().readLine());
             boolean triar = false;
             while (!triar) {
                 System.out.println("Vols introduir mes valors:");
@@ -76,33 +76,27 @@ public class EX5 {
                     System.out.println("Valor invalid");
                 }
             }
-        i++;
-        if (i == array.length) {
+        xula++;
+        if (xula == array.length) {
         sortir = true;
             }
         }
-        for (int j = 0; j < array.length; j++) {
-            System.out.println(array[j]);
-        }
-        System.out.println("Valors Totals: " + i);
-        for (int j = 0; j < i; j++) {
-            if (array[j] > 0) {
-                System.out.println(j + " Valor Positiu");
+       
+        System.out.println("Valors Totals: " + xula);
+        for (int i = 0; i < xula; i++) {
+            if (array[i] >= 0) {
+                System.out.println(array[i] + " Valor Positiu");
                 cp++;
-                sp = sp + array[j];
             }else{
-                System.out.println(j + " Valor Negatiu");
+                System.out.println(array[i] + " Valor Negatiu");
                 cn++;
-                sn = sn + array[j];
             }
-            if (array[j] % 2 == 0) {
-                System.out.println(j + " Valor Parell");
+            if (array[i] % 2 == 0) {
+                System.out.println(array[i] + " Valor Parell");
                 cpar++;
-                spar = spar + array[j];
             }else{
-                System.out.println(j + " Valor Senar");
+                System.out.println(array[i] + " Valor Senar");
                 csen++;
-                ssen = ssen + array[j];
             }
         }
     }

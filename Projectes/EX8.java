@@ -1,7 +1,10 @@
 import java.util.Random;
 
+/**
+ * EX8
+ */
 public class EX8 {
-
+    
     public static void main(String[] args) {
         Random r = new Random();
         int numPremiat = r.nextInt(10);

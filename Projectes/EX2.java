@@ -1,4 +1,8 @@
+/**
+ * EX2
+ */
 public class EX2 {
+
     public static void main(String[] args) {
         float pes;
         float altura;

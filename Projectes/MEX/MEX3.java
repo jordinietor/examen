@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * EX3
  */
-public class EX3 {
+public class MEX3 {
 
     public static void main(String[] args) {
         int num;

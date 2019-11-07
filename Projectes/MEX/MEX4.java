@@ -3,7 +3,7 @@
 /**
  * EX4
  */
-public class EX4 {
+public class MEX4 {
 
     public static void main(String[] args) {
         /*  
