@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EX4",
+            "request": "launch",
+            "mainClass": "Ex.EX4",
+            "projectName": "Programacio_1355a2c3"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - anagrama",
+            "request": "launch",
+            "mainClass": "anagrama",
+            "projectName": "Programacio_1355a2c3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MEX5",
             "request": "launch",
             "mainClass": "MEX5",
