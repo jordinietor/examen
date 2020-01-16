@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
 /**
  * mots
  */
@@ -11,8 +9,6 @@ public class mots {
         Scanner scan = new Scanner(System.in);
         String taulell[][];
         String noms[][] = new String[2][2];
-        String lletres;
-        String paraula;
         int rondes;
 
         System.out.println(" 2 jugadors:");
@@ -29,39 +25,50 @@ public class mots {
         System.out.println("\n");
         System.out.println("--------------------");
         System.out.println("Amb quina paraula vols començar?");
-        paraula = scan.next();
+        String paraula = scan.next();
 
-        joc:
-        for (int i = 0; i < rondes; i++) {
+        joc: for (int i = 0; i < rondes; i++) {
             for (int j = 0; j < noms.length; j++) {
-                lletres = car(paraula);
-                System.out.println("Torn del jugador " + (j + 1) + ":");
+                String lletres = car(paraula);
+                System.out.println("Ronda " + (i + 1));
+                System.out.println("Torn del jugador " + noms[j][0] + " :");
                 System.out.println("Introdueix la paraula començant per " + lletres);
+
                 paraula = scan.next();
-                if (paraula.startsWith(lletres)){
+                if (paraula.startsWith(lletres)) {
                     taulell[j][i] = paraula;
                     noms[j][1] = String.valueOf(i + 1);
-                }else{
+                } else {
                     break joc;
                 }
             }
         }
         System.out.println("\n");
         System.out.println("--------------------");
-
+        puntuacio(taulell, noms);
         scan.close();
     }
 
     public static String car(String paraula) {
-        String lletres = paraula.substring(paraula.length()-2);
+        String lletres = paraula.substring(paraula.length() - 2);
         return lletres;
     }
 
-    public static void puntuacio(String[][] punts) {
-        for (int i = 0; i < punts.length; i++) {
-            for (int j = 0; j < punts.length; j++) {
-                System.out.println(punts[j][i]);
+    public static void puntuacio(String[][] taula, String[][] noms) {
+        for (int i = 0; i < taula.length; i++) {
+            System.out.print("\n");
+            for (int j = -1; j <= taula[0].length; j++) {
+                if (j == -1) {
+                    System.out.print(noms[i][0] + "\t");
+                } else if (j == taula[0].length) {
+                    System.out.print(noms[i][1]);
+                } else {
+                    if (taula[i][j] != null) {
+                        System.out.print(taula[i][j] + "\t");
+                    }
+                }
             }
+            System.out.print("\n");
         }
     }
 }

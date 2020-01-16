@@ -1,0 +1,27 @@
+public static void tornJugador(String nom, char[][] taulell, char token) {
+        while (true) {
+            String cordenades2 = " ";
+            System.out.println("torn " + nom);
+            if (quantitatBuits(taulell) == 3) {
+                System.out.println("Quina fitcha bols moure? (les cordenades de 1 al 3 i separades per '-')");
+                cordenades2 = sc.nextLine();
+                if (cordenades2.matches("[1-3]-[1-3]")) {
+                    String[] xy = cordenades2.split("-");
+                    if (fitchaJugador(xy, taulell, token)){
+                        taulell[Integer.parseInt(xy[0]) - 1][Integer.parseInt(xy[1]) - 1] = ' ';
+
+                    }
+                }
+            }
+            System.out.println("A on bols Posar la fitcha");
+            String cordenades = sc.nextLine();
+            if (cordenades.matches("[1-3]-[1-3]") && !cordenades.equalsIgnoreCase(cordenades2)) {
+                String[] xy = cordenades.split("-");
+                if (llocbuit(xy, taulell)) {
+                    taulell[Integer.parseInt(xy[0]) - 1][Integer.parseInt(xy[1]) - 1] = token;
+                    break;
+                }
+            }
+
+        }
+    }
