@@ -4,5 +4,5 @@ import java.time.LocalDate;
 
 public class Lector extends Usuaris {
 
-    protected LocalDate dataneixament;
+    private LocalDate dataneixament;
 }
